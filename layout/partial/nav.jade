@@ -11,10 +11,20 @@
       else
         a(href="/about")= __('About')
     li
-      if is_archive()
+      if is_current('archives')
         a.current(href="/archives")= __('Archive')
       else
         a(href="/archives")= __('Archive')
+    li
+      if is_current('books')
+        a.current(href="/books")= __('Book')
+      else
+        a(href="/books")= __('Book')
+    li
+      if is_current('movies')
+        a.current(href="/movies")= __('Movie')
+      else
+        a(href="/movies")= __('Movie')
   .information
     .back_btn
       li
