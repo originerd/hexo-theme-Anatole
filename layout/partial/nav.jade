@@ -16,15 +16,15 @@
       else
         a(href="/archives")= __('Archive')
     li
-      if is_current('books')
-        a.current(href="/books")= __('Book')
+      if is_current('book')
+        a.current(href="/book")= __('Book')
       else
-        a(href="/books")= __('Book')
+        a(href="/book")= __('Book')
     li
-      if is_current('movies')
-        a.current(href="/movies")= __('Movie')
+      if is_current('cultural-life')
+        a.current(href="/cultural-life")= __('Cultural Life')
       else
-        a(href="/movies")= __('Movie')
+        a(href="/cultural-life")= __('Cultural Life')
   .information
     .back_btn
       li
